@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: it.plan.eserciziojpa.web.rest.ClienteRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 29.811 s <<< FAILURE! - in it.plan.eserciziojpa.web.rest.ClienteRepositoryTest
+it.plan.eserciziojpa.web.rest.ClienteRepositoryTest.clienteOrdiniMax3Righetest  Time elapsed: 0.312 s  <<< ERROR!
+org.springframework.orm.jpa.JpaSystemException: could not extract ResultSet; nested exception is org.hibernate.exception.GenericJDBCException: could not extract ResultSet
+	at it.plan.eserciziojpa.web.rest.ClienteRepositoryTest.utilityclienteOrdiniMax3Righetest(ClienteRepositoryTest.java:498)
+	at it.plan.eserciziojpa.web.rest.ClienteRepositoryTest.clienteOrdiniMax3Righetest(ClienteRepositoryTest.java:531)
+Caused by: org.hibernate.exception.GenericJDBCException: could not extract ResultSet
+	at it.plan.eserciziojpa.web.rest.ClienteRepositoryTest.utilityclienteOrdiniMax3Righetest(ClienteRepositoryTest.java:498)
+	at it.plan.eserciziojpa.web.rest.ClienteRepositoryTest.clienteOrdiniMax3Righetest(ClienteRepositoryTest.java:531)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: 
+General error: "java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5"; SQL statement:
+select cliente0_.id as col_0_0_, count(ordine1_.id) as col_1_0_, cliente0_.id as id1_0_, cliente0_.descrizione as descrizi2_0_ from cliente cliente0_ left outer join ordine ordine1_ on (cliente0_.id=ordine1_.cliente_id) left outer join riga_ordine rigaordine2_ on (rigaordine2_.ordine_id=ordine1_.id) group by cliente0_.id , ordine1_.id having count(rigaordine2_.id)<3 order by cliente0_.id, ordine1_.id [50000-200]
+	at it.plan.eserciziojpa.web.rest.ClienteRepositoryTest.utilityclienteOrdiniMax3Righetest(ClienteRepositoryTest.java:498)
+	at it.plan.eserciziojpa.web.rest.ClienteRepositoryTest.clienteOrdiniMax3Righetest(ClienteRepositoryTest.java:531)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at it.plan.eserciziojpa.web.rest.ClienteRepositoryTest.utilityclienteOrdiniMax3Righetest(ClienteRepositoryTest.java:498)
+	at it.plan.eserciziojpa.web.rest.ClienteRepositoryTest.clienteOrdiniMax3Righetest(ClienteRepositoryTest.java:531)
+

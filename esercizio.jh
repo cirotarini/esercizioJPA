@@ -1,0 +1,31 @@
+
+entity Cliente {
+descrizione String required maxlength(200),
+}
+
+entity Prodotto {
+descrizione String required maxlength(200),
+}
+
+entity  Ordine {
+     data Instant required
+}
+
+
+entity RigaOrdine {
+	quantita Integer required
+}
+
+
+
+
+relationship ManyToOne {
+     	Ordine {Cliente (descrizione)} to Cliente,
+        RigaOrdine {Ordine} to Ordine,
+        RigaOrdine {Prodotto (descrizione)} to Prodotto
+}
+
+
+
+
+

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: it.plan.eserciziojpa.config.WebConfigurerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.767 s - in it.plan.eserciziojpa.config.WebConfigurerTest

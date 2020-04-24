@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="rigaOrdine">
+            <h2><span>Riga Ordine</span> {{rigaOrdine.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Quantita</span></dt>
+                <dd>
+                    <span>{{rigaOrdine.quantita}}</span>
+                </dd>
+                <dt><span>Ordine</span></dt>
+                <dd>
+                    <div *ngIf="rigaOrdine.ordine">
+                        <a [routerLink]="['/ordine', rigaOrdine.ordine?.id, 'view']">{{rigaOrdine.ordine?.id}}</a>
+                    </div>
+                </dd>
+                <dt><span>Prodotto</span></dt>
+                <dd>
+                    <div *ngIf="rigaOrdine.prodotto">
+                        <a [routerLink]="['/prodotto', rigaOrdine.prodotto?.id, 'view']">{{rigaOrdine.prodotto?.descrizione}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/riga-ordine', rigaOrdine.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
