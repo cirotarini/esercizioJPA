@@ -1,0 +1,38 @@
+{
+    "name": "RigaOrdine",
+    "fields": [
+        {
+            "fieldName": "quantita",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "ordine",
+            "otherEntityRelationshipName": "rigaOrdine",
+            "relationshipName": "ordine",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "prodotto",
+            "otherEntityRelationshipName": "rigaOrdine",
+            "relationshipName": "prodotto",
+            "otherEntityField": "descrizione"
+        }
+    ],
+    "changelogDate": "20200309100709",
+    "entityTableName": "riga_ordine",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

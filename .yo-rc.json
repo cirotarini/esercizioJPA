@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "it.plan.eserciziojpa"
+    },
+    "jhipsterVersion": "6.6.0",
+    "applicationType": "monolith",
+    "baseName": "esercizioJPA_03_2020",
+    "packageName": "it.plan.eserciziojpa",
+    "packageFolder": "it/plan/eserciziojpa",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZWE3MGI5ODBmMTRmYzE1OWViMWE2YjZlYWNlODI5OTE5ZjRkMWNlOTYwZDViYzY2NDMyNTIyZGNhNTFkMjU1NTc2YTYwOGM1ZTM4NjJkNTdhNzEwYTkzZWI2OGZjODg5ODdiNjljZTkzMzhmZjdlYmU0MzRmZTRjZmY1YWIzYWE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1583748059397,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
